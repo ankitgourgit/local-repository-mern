@@ -1,0 +1,121 @@
+ <!-- <script>
+    for(var i=0;i<=10;i++)
+    {
+        setTimeout(()=>{
+        console.warn(i)
+        },3000)
+    }</script> -->
+
+      <!-- <script>
+        for(let i=0;i<=10;i++)
+        {
+            setTimeout(()=>{
+            console.warn(i)
+            },3000)
+        }</script>  -->
+
+        <!-- <script>
+            function someval()
+            {
+                return 100;
+            }
+            function add(a,b=20,c=someval())
+            {
+                return a+b+c;
+            }
+            console.warn(add(10)); 
+        </script> -->
+
+
+        <!-- <script>
+             function f1(callback)
+             {
+                document.write('<br>f1-called...<br>')
+                callback();
+             }
+             f1(function (){
+                 document.write('callback executed...');
+             });
+        </script> -->
+
+
+        <!-- <script>
+            function operation(a,b,callback)
+            {
+                var result=a+b;
+                document.write("addition:"+result);
+                callback(result);
+            }
+            operation(20,11,function(n){
+                if(n%2)
+                document.write("<br>result is odd")
+                else
+                document.write("<br>result is even");
+            })
+        </script> -->
+
+
+        <!-- <script>
+            /*
+            callback
+            error callback
+            callback null
+            */
+
+            function addition(a,b,callback)
+            {
+                if(a>0 && b>0)
+                {
+                    var result=a+b;
+                    document.write("<br>Addition:"+result);
+                    callback(null,result);
+                }
+                else
+                {
+                    callback(new Error("Negative number error"),null);
+                }
+            }
+
+            var x=prompt("Enter 1st number")*1;
+            var y=prompt("Enter 2nd number")*1;
+
+            addition(x,y,function(err,result){
+                if(err)
+                {
+                    document.write("<br>"+err);
+                }
+                else
+                {
+                    result%2 ? document.write("<br>Odd"):document.write("<br>Even")
+                }
+            });
+        </script> -->
+
+
+        <script>
+            function checkAge(personAge,callback)
+            {
+                if(personAge>=18)
+                {
+                    callback(null);
+                }
+                else
+                {
+                    callback(new Error("Invalid voter..."));
+                }
+            }
+
+        var age=prompt("Enter Age")*1;
+        checkAge(age,err=>{
+            if(err)
+            document.write("<br>"+err);
+            else
+            document.write("<br>you can vote")
+        });
+        </script> 
+
+
+
+
+
+

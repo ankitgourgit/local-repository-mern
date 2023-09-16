@@ -1,0 +1,299 @@
+<!-- 
+<script>//swapping of two no.
+    var a,b,temp;
+    a=200;
+    b=100;
+    document.write("a="+a+"<br>");
+    document.write("b="+b+"<br>");
+    //temp=a;
+  //  a=b;
+   // b=temp;
+   a=a+b;
+   b=a-b;
+   a=a-b;
+    document.write("a="+a+"<br>");
+    document.write("b="+b+"<br>");
+</script> -->
+
+<!-- <script>//reverse 3 digit no.
+    var n=123,sm=0,r;
+    document.write("A="+n); 
+    while(n!=0)
+    {
+       r=parseInt(n%10);
+       sm=parseInt((sm*10)+r);
+       n=parseInt(n/10);
+    }
+    document.write("B="+sm);
+
+</script> -->
+
+<!-- <script>//factorial in alert box
+    var a=prompt("value of a");
+     var f=1;
+    for(i=1;i<=a;i++)
+    {
+        f=f*i;
+    }
+    alert("factorial of a will be="+f);
+</script> -->
+
+<!-- <script> //happy birthday
+    var age=prompt("Enter age:");
+    for(i=0;i<age;i++)
+    {
+        document.write("happy birthday!!!"+"<br>")
+    }
+</script> -->
+
+
+<!-- <html>
+<p id="demo"></p>
+<script>
+    var d= new Date();
+    document.getElementById("demo").innerHTML=d;
+</script>
+</html> -->
+
+ <!-- <html>
+
+    <button   onclick="image1()">image-1</button>
+    <button  onclick="image2()">image-2</button>
+    <button  onclick="image3()">image-3</button><br>
+    <img id="btn" src="">
+
+<script>
+    
+    function image1()
+    {
+         document.getElementById("btn").src="img01.jpg"
+
+
+    }
+    function image2()
+    {
+
+         document.getElementById("btn").src="img02.jpg"
+
+
+    }
+    function image3()
+    {
+         document.getElementById("btn").src="img03.jpg"
+
+    }
+
+</script>
+
+</html>  -->
+
+
+<!-- <html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="checkbox" id="cho">Chocolate <br>
+        <input type="checkbox" id="van">vanilla  <br><br>
+        <input type="button" value="check order" onclick="checkBox()">
+
+        <script>
+            function checkBox()
+            {
+                var a=document.getElementById("cho");
+                var b=document.getElementById("van");
+
+                if(a.checked==true && b.checked==true)
+                {
+                    alert("You like both chocolate and vanilla");
+                }
+                else if(a.checked==true)
+                {
+                    alert("You like chocolate");
+                }
+                else if(b.checked==true)
+                {
+                    alert("You like vanilla");
+                }
+                else{
+                    alert("pick one");
+                }
+            }
+
+        </script>
+    </body>
+</html> -->
+
+
+<!-- <script>
+    var num=prompt("Enter a number");
+    var count=0;
+    for(var i=1;i<=num;i++)
+    {
+       if(num%i == 0)
+       {
+         count++;
+       }
+    }
+    if(count==2)
+    {
+        document.write("prime number")
+    }
+
+    else
+    {
+        document.write("not  prime number")
+    }
+</script> -->
+
+
+<!-- <script>
+    var a1=[[1,2,3],[4,5,6],[7,8,9]];
+    var a2=[[9,8,7],[6,5,4],[3,2,1]];
+    var sm=[[0,0,0],[0,0,0],[0,0,0]];
+    
+    for(var i=0;i<3;i++)
+    {
+        for(var j=0;j<3;j++)
+        {
+            for(var k=0;k<3;k++)
+            {
+                sm[i][j]=sm[i][j]+(a1[i][k]*a2[k][j]);   
+                     
+            }
+        }
+    }
+    
+    for(var i=0;i<3;i++)
+    {
+        for(var j=0;j<3;j++)
+        {
+                document.writeln(sm[i][j]);
+        }
+          document.write("<br>")
+    }
+    </script> -->
+
+<!-- <script>
+    var p=5500;
+    var r=5;
+    var t=2.5;
+    var si=SI(p,r,t);
+    document.write("simple intrest will be:"+si);
+
+    function SI(a,b,c)
+    {
+      z=((a*b*c)/100);
+      return z;
+    }
+</script> -->
+
+<!-- <script>
+    var x=[10,20,30,40]
+    document.write(x);
+
+    //push and pop
+   // x.push(1000);
+    //document.write("<br>"+x)
+   // x.pop()
+   // document.write("<br>"+x)
+
+   //splice
+  // x.splice(2,1,1000,2000,3000)
+   //document.write("<br>"+x)
+
+   //shift and unshift
+   x.unshift(1000,2000,3000)
+   document.write("<br>"+x)
+   x.shift()
+   document.write("<br>"+x)
+
+</script> -->
+
+<!-- <script>
+   var emp_details=[{'eno':100,'enm':"amit",'esal':100000},
+                 {'eno':101,'enm':"pankaj",'esal':200000},
+                 {'eno':102,'enm':"ravi",'esal':300000},{'eno':201,'enm':"ankit"} ];
+
+    document.write("Employee details:"+emp_details+"<br>")
+    document.write("typeof Employee details:"+emp_details+"<br>")
+
+    //for(let key in emp_details)
+   // {
+    //    document.write(key+"...>"+emp_details[key]+"<br>")
+  //  }
+
+     for( let row of emp_details)
+    {
+        for(let key in row)
+        {
+            document.write(key+">>>>"+row[key]+"<br>")
+        }
+    
+    }
+
+   // document.write("Employee number:"+emp_details[0]["eno"]+"<br>")
+   // document.write("Employee name:"+emp_details[0]["enm"]+"<br>")
+   // document.write("Employee number:"+emp_details[1]["eno"]+"<br>")
+  //  document.write("Employee name:"+emp_details[1]["enm"]+"<br>")
+
+</script> -->
+
+
+<html>
+    <body>
+        <img onclick="imagedetail01(this)" src="./img01.jpg" height="200px" width="200px" >
+        <img onclick="imagedetail02(this)" src="./img02.jpg"  height="200px" width="200px" >
+        <img onclick="imagedetail03(this)" src="./img03.jpg"  height="200px" width="200px"><br>
+    
+        
+        <textarea name="" id="demo" cols="80" rows="10" ></textarea>
+    </body>
+    <script>
+        function imagedetail01()
+        {
+            var textarea=document.getElementById('demo')
+            textarea.value='rajisthan desert'
+        }
+
+        function imagedetail02()
+        {
+            var textarea=document.getElementById('demo')
+            textarea.value='fort'
+        }
+        
+        function imagedetail03()
+        {
+            var textarea=document.getElementById('demo')
+            textarea.value='fort of chittorgadh'
+        }
+    </script>
+</html>
+
+
+<!-- <html>
+    <head>
+        <select name="flavour" id="pick" onchange="myflavour()">
+            <option lable="Select"></option>
+            <option  value="">Mango</option>
+            <option value="">Dark chocolate</option>
+            <option value="">Tuti-fruti</option>
+            <option value="">Vanilla</option>
+            <option value="">strawberry</option>
+           
+        </select><br><br>
+        <textarea name="" id="txt" cols="30" rows="5"></textarea>
+    </head>
+    <script >
+        function myflavour()
+        {
+            var flv=document.getElementById('pick')
+            var displaytext=flv.options[flv.selectedIndex].text
+            document.getElementById("txt").value=displaytext
+            
+        }
+       
+    </script>
+</html> -->
+
+

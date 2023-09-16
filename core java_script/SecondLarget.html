@@ -1,0 +1,30 @@
+<script>
+    var ar=new Array(8);
+
+    for(var i=0;i<8;i++)
+    {
+        ar[i]=parseInt(prompt("value="));
+    }
+
+    var fl,sl;
+    fl=ar[0];
+    sl=ar[1];
+
+    for(var i=1;i<8;i++)
+    {
+        if(fl<ar[i])
+        {
+            sl=fl;
+            fl=ar[i];
+        }
+        else if(sl<ar[i] && fl>a[i])
+        {
+            sl=ar[i];
+        }
+
+    }
+
+    document.write("First largest="+fl+"<br>");
+    document.write("Second largest="+sl);
+
+</script>

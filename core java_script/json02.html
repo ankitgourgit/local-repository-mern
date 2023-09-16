@@ -1,0 +1,42 @@
+<script>
+    var user=[
+    {
+        "id":1,
+        "name":"Ankit gour",
+        "username":"Anku@",
+        "email":"ankitgour70@gmail.com",
+        "address":{
+            "street":"vijaya nagar",
+            "suite":"house 556",
+            "city":"indore",
+            "zipcode":"452024",
+            "geo":{
+                "latitude":"37.02 deg",
+                "longitude":"81.98 deg"
+            }
+        }
+    }]
+
+    for(let row of user)
+    {
+        for(let key in row)
+        {
+            if(typeof row[key]==typeof {})
+            {
+                for(let key1 in row[key])
+                {
+                    if(typeof  row[key][key1]==typeof {})
+                    {
+                        for(let key2 in row[key][key1])
+                        document.write(key2+"...>"+row[key][key1][key2]+"<br>")
+                    }
+                    else
+                    document.write(key1+"...>"+row[key][key1]+"<br>")
+                }
+            }
+            else
+            document.write(key+"....>"+row[key]+"<br>")
+        }
+        document.write("<br>")
+    }
+</script>

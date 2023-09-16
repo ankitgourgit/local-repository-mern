@@ -1,0 +1,23 @@
+<script> 
+    var count=0;
+    n=prompt("N=");
+   // console.log('N===='+n);
+    for(i=2;i<=n;i++)
+    {
+        count=0;
+        for(j=1;j<=i;j++)
+        {
+          //  console.log('i='+i+'----j='+j);
+            if(i%j == 0 )
+          {
+             count++;
+          }
+         
+        } 
+        if(count==2)
+        {
+           document.write("prime no="+i+"<br>");
+        }
+      
+    }
+</script>

@@ -1,0 +1,33 @@
+<!-- <script>
+    document.write("<h1>Before Function Execution<h1>")
+        var demo=(a,b)=>
+        {
+            var c
+            c=a+b;
+            return c;
+        }
+        var a,b,res
+        a=500;
+        b=200;
+        res=demo(a,b)
+        document.write("<h1>Add="+res+"<h1>")
+        document.write("<h1>After function execution<h1>")
+</script> -->
+
+<script>
+    document.write("<h1>before fun execution<h1>")
+        var demo =(a)=>
+        {
+            document.write("<h1>"+a+"<h1>");
+                return true;
+        }
+        var i=0;
+        for(demo('a'); i<3 && demo('b') ;demo('c'))
+        
+        {
+            demo('d');
+            i++;
+        }
+
+        document.write("<h1>After fun execution</h1>");
+</script>

@@ -1,0 +1,38 @@
+<script>
+    var employee = [
+    {
+        "id": 1,
+        "name": "ankit",
+        "email": "ankitgour70@gmail.com",
+        "address": {
+            "H.no": 132,
+            "street": "vijay nagar",
+            "pincode": 452022,
+            "geo": {
+                "latitude": "32.02 deg",
+                "longitude": "97.08 deg"
+            }
+        }
+    }
+]
+
+for (let row of employee) {
+    for (let key in row) {
+        if (typeof row[key] == typeof {}) {
+            for (let key1 in row[key]) {
+                if (typeof row[key][key1] == typeof {}) {
+                    for (let key2 in row[key][key1])
+                        document.write(key2 + "...>" + row[key][key1][key2] + "<br>")
+                }
+                else
+                    document.write(key1 + "...>" + row[key][key1]+"<br>")
+            }
+        }
+        else
+            document.write(key + "...>" + row[key]+"<br>")
+    }
+    document.write("<br>")
+
+}
+
+</script>

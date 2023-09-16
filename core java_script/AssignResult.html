@@ -1,0 +1,56 @@
+<script>
+    a=parseInt(prompt("C="));
+    b=parseInt(prompt("C++="));
+    c=parseInt(prompt("JAVA="));
+    d=parseInt(prompt("MERN="));
+    e=parseInt(prompt("MONGO="));
+
+    var sum ,per,res,count=0;
+    sum=parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e);
+    document.write("TOTAL="+sum +"<br>");
+
+    per=sum/5;
+    document.write("PERCENTAGE="+per+"%" +"<br>");
+
+    if(a<40)
+    {
+        count++;
+    }
+    if(b<40)
+    {
+        count++;
+    }
+    if(c<40)
+    {
+        count++;
+    }
+    if(d<40)
+    {
+        count++;
+    }
+    if(e<40)
+    {
+        count++;
+    }
+
+    if(count==2)
+    {
+        document.write("Result:Atkt");
+    }
+    else if(count>2)
+    {
+        document.write("Result:Year Back");
+    }
+    else if(per>=60)
+    {
+      document.write("Result:first division");
+    }
+    else if(per>=45 && per<60)
+    {
+      document.write("Result:Second division");
+    }
+    else if(per>=34 && per<45 )
+    {
+      document.write("Result:Third division");
+    }
+</script>

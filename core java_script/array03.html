@@ -1,0 +1,26 @@
+<script>
+    var ar =new Array(5);
+    for(i=0;i<5;i++)
+    {
+        ar[i] = parseInt(prompt("value of array element="));
+    }
+    var ct=0,n;
+    n=parseInt(prompt("Value of n:"));
+
+    for(i=0;i<5;i++)
+    {
+        if(ar[i]==n)
+        {
+            document.write("position of element="+i+"<br>");
+            ct=ct+1;
+        }
+    }
+    if(ct != 0)
+    {
+        document.write("value:"+n+"="+ct+"time found")
+    }
+    else
+    {
+        document.write("value not found");
+    }
+</script>

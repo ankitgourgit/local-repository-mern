@@ -1,0 +1,34 @@
+<script>
+var i=0,n=0,ct=0,t,p;
+
+for(i=100;i<35555;i++)
+{
+    n=i;
+    ct=0;
+
+    while(n != 0)
+    {
+        ct++; 
+        n=parseInt(n/10);
+    }
+    n=i;
+    p=1;
+    sm=0;
+
+    while(n !=0)
+    {
+        t=parseInt(n%10);
+        for(k=0;k<parseInt(ct);k++)
+        {
+            p=parseInt(p*t);
+        }
+        sm=parseInt(sm+p);
+        p=1;
+        n=parseInt(n/10);
+    }
+     if(sm==i)
+     {
+        document.write(sm +"<br>");
+     }
+}
+</script>

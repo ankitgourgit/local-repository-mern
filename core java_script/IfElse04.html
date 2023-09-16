@@ -1,0 +1,40 @@
+<script>
+var a,b,c,d;
+a=parseInt (prompt("A="));
+b=parseInt (prompt("B="));
+c=parseInt (prompt("C="));
+d=parseInt (prompt("D="));
+e=parseInt (prompt("E="));
+
+if(a>b && a>c && a>d && a>e)
+{
+     document.write("A is greater"+a);
+}
+else
+{
+    if(b>c && b>d && b>e)
+    {
+        document.write("B is greater"+b);
+    }
+    else
+    {
+        if(c>d && c>e)
+        {
+            document.write("C is greater"+c);
+
+        }
+        else
+        {
+            if(d>e)
+            {
+                document.write("D is greater"+d);
+            }
+            else
+            {
+                document.write("E is greater"+e);
+            }
+        }
+    }
+}
+
+</script>

@@ -1,0 +1,17 @@
+<script>
+
+    let jsonObj ={
+        name:"ankit",
+        class:"first",
+        age:"28",
+        salary:"100000"
+    }
+    console.log(jsonObj);
+ 
+    let myJsonStr = JSON.stringify(jsonObj);//convert into string;
+    console.log(myJsonStr);
+
+    let newJsonObj=JSON.parse(myJsonStr);//convert back in object;
+    console.log(newJsonObj);
+
+</script>

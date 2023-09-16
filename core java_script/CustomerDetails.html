@@ -1,0 +1,18 @@
+<script>
+    var customer=
+    {
+        id: 100,
+        cname:'Rahul',
+        age: 28
+    };
+    customer.mobile="909123070"
+
+    document.write("<br> Id:"+customer['id']);
+    document.write("<br> CName:"+customer.cname);
+    document.write("<br> Age:"+customer.age);
+    document.write("<br> Mobile:"+customer.mobile);
+
+    delete customer.mobile;
+    document.write("<br> Mobile:"+customer.mobile);
+
+</script>

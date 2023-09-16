@@ -1,0 +1,34 @@
+<script>
+    var empDetails =
+    [{"eno":1001,"enm":"jarvis","esal":1000.5},
+    {"eno":1002,"enm":"jay","esal":2000.5},
+    {"eno":1003,"enm":"janki","esal":3000.5}]
+
+   document.write("Employee details:"+empDetails+"<br>");
+   document.write("Typeof Employee details:"+empDetails+"<br>");
+
+   document.write("<h1>Array element lop access</h1>")
+
+   /* for(let key in empDetails)
+    {
+        document.write(key+"....>"+empDetails[key]+"<br>")
+    }
+
+    document.write("<br><br>")*/
+
+   // for(let row of empDetails)
+  //  {
+       // for(let key in row)
+      //  {
+      //      document.write(key+">>>>>>>"+row[key]+"<br>");
+     //   }
+
+
+        document.write("<h1>Employee details mannual access</h1>");
+        document.write("Employee number:"+ empDetails[0]["eno"]+"<br>");
+        document.write("Employee name:"+ empDetails[0]["enm"]+"<br>");
+        document.write("Employee salary:"+ empDetails[0]["esal"]+"<br>");
+    
+
+
+</script>

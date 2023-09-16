@@ -1,0 +1,112 @@
+<script>
+    var user=[
+    {
+        "id":1,
+        "name":{"Fname":"Ankit",
+        "Lname":"Gour"},
+        "username":"Anku@",
+        "email":{
+            "Email1":"ankitgour70@gmail.com",
+            "Email2":"ankitgor28@gmail.com"
+        },
+        "address":{
+            "street":"vijaya nagar",
+            "suite":"apt 556",
+            "city":"indore",
+            "zipcode":"452024",
+            "geo":{
+                "latitude":"37.02 deg",
+                "longitude":"81.98 deg"
+            }
+        }
+    },
+    
+    {
+        "id":2,
+        "name":{"Fname":"Ashu",
+        "Lname":"Gour"},
+        "username":"Ashu@",
+        "email":{
+            "Email1":"ashu70@gmail.com",
+            "Email2":"ashugour28@gmail.com"
+        },
+        "address":{
+            "street":"vijaya nagar ",
+            "suite":"apt 557",
+            "city":"indore",
+            "zipcode":"452024",
+            "geo":{
+                "latitude":"32.02 deg",
+                "longitude":"80.98 deg"
+            }
+        }
+    },
+
+
+    {
+        "id":3,
+        "name":{"Fname":"mohit",
+        "Lname":"Gour"},
+        "username":"Mohit@",
+        "email":{
+            "Email1":"Mohit70@gmail.com",
+            "Email2":"mohitgour28@gmail.com"
+        },
+        "address":{
+            "street":"agrawal colony",
+            "suite":"apt 600",
+            "city":"harda",
+            "zipcode":"462021",
+            "geo":{
+                "latitude":"30.02 deg",
+                "longitude":"80.98 deg"
+            }
+        }
+    },
+
+    {
+    "id":4,
+    "name":{"Fname":"jahid",
+    "Lname":"Khan"},
+    "username":"jahid@",
+    "email":"jahidkhan@gmail.com",
+    "Address":{
+        "street":"agrawal colony",
+        "suite":"apt 600",
+        "city":"harda",
+        "zipcode":"462021",
+        "geo":{
+            "latitude":"12.02",
+            "longitude":"23.34"
+
+            }
+        }
+    }
+    
+ ]
+
+
+
+    for(let row of user)
+    {
+        for(let key in row)
+        {
+            if(typeof row[key]==typeof {})
+            {
+                for(let key1 in row[key])
+                {
+                    if(typeof  row[key][key1]==typeof {})
+                    {
+                        for(let key2 in row[key][key1])
+                        document.write(key2+"...>"+row[key][key1][key2]+"<br>")
+                    }
+                    else
+                    document.write(key1+"....>"+row[key][key1]+"<br>")
+                }
+            }
+            else
+            document.write(key+"....>"+row[key]+"<br>")
+        }
+        document.write("<br>")
+    }
+</script>

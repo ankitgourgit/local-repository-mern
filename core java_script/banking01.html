@@ -1,0 +1,54 @@
+<script>
+    function customer(id,cname,mobile,age,bal)
+    {
+        this.id=id;
+        this.cname=cname;
+        this.mobile=mobile;
+        this.age=age;
+        this.bal=bal;
+
+        this.withdrawal=function(amount)
+        {
+            if(amount>this.bal)
+            {
+                document.write("<br>Insufficient balance");
+            }
+            else
+            {
+                this.bal -= amount;
+                document.write("<br>withdrawal success...");
+            }
+        }
+
+        this.deposit=function(amount)
+        {
+            this.bal += amount;
+            document.write("<br>Total Balance:"+this.bal);
+        }
+
+        this.balanceEnquiry=function()
+        {
+            document.write("<br>Current Balance:"+this.bal);
+        }
+
+        this.customername=function()
+        {
+            document.write("<br>Customer Name:"+this.cname);
+        }
+
+        this.ageOfPerson=function()
+        {
+            document.write("<br>Customer age:"+this.age);
+
+        }
+    }
+
+    var obj =new customer
+    (100,"Rahul","9009123070",21,10000);
+    obj.customername();
+    obj.ageOfPerson();
+    obj.deposit(5000);
+    obj.withdrawal(2000);
+    obj.balanceEnquiry();
+   
+</script>

@@ -1,0 +1,52 @@
+<script>
+    var a,b,c; //check which is greater among a,b,c
+    a=parseInt(prompt("A="));
+    b=parseInt(prompt("B="));
+    c=parseInt(prompt("C="));
+//nested
+
+   /* if(a>b)
+    {
+        if(a>c)
+        {
+            document.write("A is Greater"+a);
+        }
+        else
+        {
+            document.write("C is Greater"+c);
+        }  
+    }
+    else
+    {
+        if(b>c)
+        {
+            document.write("B is Greater"+b);
+        }
+        else
+        {
+            document.write("C is Greater"+c);
+
+        }
+    }*/
+
+    //using logical operator
+
+   /* if(a>b && a>c)
+    {
+        document.write("A is greater"+a);
+    }
+    else
+    {
+        if(b>c)
+        {
+            document.write("B is greater"+b);
+        }
+        else
+        {
+            document.write("C is greater"+c);
+        }
+    }*/
+    d=(a>b && a>c)?a:(b>c)?b:c 
+    document.write(" greatest="+d);
+      
+</script>

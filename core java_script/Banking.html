@@ -1,0 +1,67 @@
+<script>
+    /*
+    customer:
+    property:id,cname,mobile,age,ba
+    behaviour:withdrawl(),deposite(),balance()
+    */
+    var customer={
+        id:101,
+        cname:"Rahil",
+        mobile:9009123070,
+        age:28,
+        bal:10000,
+
+        withdrawal:function(amount)
+        {
+            if(amount>this.bal)
+            {
+                alert("<br>Insufficent balance");
+            }
+            else
+            {
+                this.bal -=amount;
+                alert("<br>Collect your money");
+            }
+        },
+
+        deposit:function(amount)
+        {
+            this.bal +=amount;
+            alert("Your balance:"+this.bal);
+        },
+
+        balanceEnq:function()
+        {
+            alert("Current balance:"+this.bal)
+        },
+
+        showDetails:function()
+        {
+            document.write("<br>Id:"+this.id);
+            document.write("<br>Name:"+this.id);
+            document.write("<br>Mobile:"+this.id);
+            document.write("<br>Age:"+this.id);
+        }
+    };
+
+    do{
+        var choice=prompt("press 1 for withdrawal \n press 2 for deposit \n press 3 for balance enquiry \n please enter your choice");
+        switch(choice)
+        {
+        
+            case "1" : var amount=prompt("Enter amount")*1;
+            customer.withdrawal(amount);
+            break;
+
+            case "2" :var amount=prompt("Enter amount")*1;
+            customer.deposit(amount);
+            break;
+
+            case "3" :customer.balanceEnq();
+            break;
+
+            default :document.write("<br>Invalid choice");
+        }
+        var status=prompt("Do you want to continue (y/n)")
+    }while(status=="y" || status == "Y");
+</script>   

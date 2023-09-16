@@ -1,0 +1,38 @@
+ <!-- <script>
+    document.write("<h1>Before function exexution<h1>")
+        var demo=function()
+        { 
+            document.write("hey buddy!!!"+"<br>");
+
+        }
+        demo();
+        demo();
+        demo();
+
+        document.write("<h1>After function executed<h1>");
+
+</script> -->
+
+
+ <script>
+
+    //Anonomus Function OR varible function
+  //  document.write("<h1>Before function exexution<h1>")
+        var demo=function(a,b,c)
+        {
+           // document.write("<h1>Demo function executed<h1>")
+                switch(c)
+                {
+                    case 1:return(a+b)
+                    break;
+                    case 2:return(a-b)
+                    break;
+                    case 3:return(a/b)
+                    break;
+                    default:
+                    return("Choose  Case - 1 2 3 in parameter")
+                    break;
+                }
+        }
+        document.write("<h1>"+"The value will be:"+demo(120,200,2)+"<h1>");
+</script> 

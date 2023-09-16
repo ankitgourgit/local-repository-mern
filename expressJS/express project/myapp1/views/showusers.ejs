@@ -1,0 +1,23 @@
+<%- include('header') %>
+<table style="width:80%;text-align:center;margin:5%;background-color:deepskyblue;font-size:large;font-weight:bolder;color:black" border="10px solid black"  >
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+        <th>EMAIL</th>
+        <th>MOB</th>
+        <th>USER NAME</th>
+        <th>PASSWORD</th>
+    </tr>
+
+    <% for(let row of userDetails){ %>
+        <tr>
+            <td><%= row._id %></td>
+            <td><%= row.Name %></td>
+            <td><%= row.Email %></td>
+            <td><%= row.mno %></td>
+            <td><%= row.unm %></td>
+            <td><%= row.pwd %></td>
+        </tr>
+   <% } %>
+</table>
+<%- include('footer') %>

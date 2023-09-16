@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <script>
+            function f1()
+            {
+                var fnm,f=true;
+                fnm=document.getElementById("fnm").value
+                m=document.getElementById("m");
+                f=document.getElementById("f");
+                if(fnm.length==0)
+                {
+                    f=false;
+                    document.getElementById("s1").innerHTML="Enter name";
+                }
+                if(!(m.checked || f.checked))
+                {
+                    f=false;
+                    document.getElementById("s2").innerHTML="Select gender"
+                }
+                return f;
+            }
+            function onlychar()
+            {
+                var fnm,reg
+                fnm=document.getElementById("fnm").value
+                reg=/^[a-zA-Z]+$/
+                if(!reg.test(fnm))
+                {
+                  document.getElementById("s1").innerHTML="Only Character"
+                }
+                else
+                {
+                    document.getElementById("s1").innerHTML=""
+                }
+            }
+        </script>
+        <style>
+            span
+            {
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="post"action="success.html">
+            <table align="center" border="1">
+
+                <tr>
+                    <td>First name</td>
+                    <td> <input type="text" id="fnm" onkeyup="onlychar()"> 
+                        <span id="s1"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender" id="m">Male
+                        <input type="radio" name="Gender" id="f">Female
+                        <span id="s2"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center" colspan="2">
+                    <input type="submit" onclick="return f1()" value="click here">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </body>
+</html>

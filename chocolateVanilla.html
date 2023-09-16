@@ -1,0 +1,115 @@
+<!-- <html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="checkbox" id="cho">Chocolate <br>
+        <input type="checkbox" id="van">vanilla  <br><br>
+        <input type="button" value="check order" onclick="checkBox()">
+
+        <script>
+            function checkBox()
+            {
+                var a=document.getElementById("cho");
+                var b=document.getElementById("van");
+
+                if(a.checked==true && b.checked==true)
+                {
+                    alert("You like both chocolate and vanilla");
+                }
+                else if(a.checked==true)
+                {
+                    alert("You like chocolate");
+                }
+                else if(b.checked==true)
+                {
+                    alert("You like vanilla");
+                }
+                else{
+                    alert("pick one");
+                }
+            }
+
+        </script>
+    </body>
+</html> -->
+
+<!-- <html>
+    <script>
+        var emp_details=[{'Name':'ankit','roll no':101,'esal':20000},
+                         {'Name':'ashu','roll no':102,'esal':30000},
+                         {'Name':'ashi','roll no':103,'esal':40000},{'Name':'avi','roll no':104,'esal':50000},
+                         {'Name':'ajay','roll no':105,'esal':60000},
+                         {'Name':'raj','roll no':106,'esal':70000},{'Name':'amit','roll no':107,'esal':80000},
+                         {'Name':'ravi','roll no':107,'esal':80000},
+                         {'Name':'rohit','roll no':108,'esal':90000}]
+
+                         document.write("Employee Details <br><br>");
+
+                         for(let row of emp_details)
+                         {
+                            for(let key in row)
+                            {
+                                document.write(key+"....>"+row[key]+"<br>")
+                            }
+                            document.write("<br>");
+                         }
+
+    </script>
+</html> -->
+<!-- 
+<html>
+    <script>
+        function flvselect()
+        {
+            var d=document.getElementById('flv');
+            var displaytext=d.options[d.selectedIndex].text;
+            document.getElementById("txtvalue").value=displaytext
+
+
+        }
+    </script>
+    <body>
+        <center>
+            <h1>Welcome</h1>
+            <h2>choose your favourite flavour</h2>
+            <hr>
+            <select onclick="flvselect()" id="flv">
+                <option>chocolate</option>
+                <option>vanilla  </option>
+                <option>mango    </option>
+                <option>strawberry</option>
+            </select>
+
+            <input type="text" placeholder="flavour..." id="txtvalue">
+        </center>
+    </body>
+</html> -->
+
+<html>
+    <body>
+        <img src="../Assignment/AcImage.jpeg" onclick="imgdetails01(this)">
+        <img src="../Assignment/mobilePhone.png" onclick="imgdetails02(this)">
+
+        <textarea  id="demo" cols="30" rows="10"></textarea>
+    </body>
+
+    <script>
+        function imgdetails01()
+        {
+            var textarea=document.getElementById('demo')
+            textarea.value='AcImage';
+        }
+
+        function imgdetails02()
+        
+            {
+                var textarea=document.getElementById('demo')
+                textarea.value='mobilePhone';
+
+            }
+        
+
+
+    </script>
+</html>

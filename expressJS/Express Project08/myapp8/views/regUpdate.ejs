@@ -1,0 +1,39 @@
+<%- include('header') %>
+<div class="row justify-content-center bg-image mx-0 mb-5">
+    <div class="col-lg-6 py-5">
+        <div class="bg-white p-5 my-5">
+            <h1 class="text-center mb-4">Registration Update</h1>
+             <div class="row justify-content-center bg-image mx-0 mb-5">
+            <div class="col-lg-6 py-5">
+                <div class="bg-white p-5 my-5">
+                    <h1 class="text-center mb-4">Update Details of users</h1>
+                    <form action="/regUpdate" method="post">
+                        <div class="form-group">
+                            <input type="text" class="email-bt" placeholder="Id" name="id" required>
+                          </div>
+                        <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Name" name="Name" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="Email" class="email-bt" placeholder="Email" name="Email" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Mobile No." name="mno" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="User Name" name="unm" required>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="email-bt" placeholder="Password" name="pwd" required>
+                      </div>
+                      <div class="main_bt"> <input type="submit" value="submit"> </div>
+        
+                      </form>
+                </div>
+            </div>
+        </div>
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('footer') %>
